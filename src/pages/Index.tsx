@@ -17,13 +17,13 @@ const Index = () => {
     e.preventDefault();
     
     // Validate credentials (you can customize these)
-    const correctUsername = "my love"; // Change to desired username
-    const correctBirthday = "15/08/1995"; // Change to actual birthday
+    const correctUsername = "replica rasaili"; // Change to desired username
+    const correctBirthday = "02/07/1999"; // Change to actual birthday
     
     if (username.toLowerCase().trim() === correctUsername && birthday === correctBirthday) {
       toast({
         title: "Welcome my darling! 💖",
-        description: "Get ready for your special surprise...",
+        description: "Get ready for your special surprise my babe...",
       });
       
       setTimeout(() => {
