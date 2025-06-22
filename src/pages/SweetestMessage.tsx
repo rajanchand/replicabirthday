@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Heart } from "lucide-react";
+import { Heart, ArrowLeft, ArrowRight } from "lucide-react";
 
 const SweetestMessage = () => {
   const [showHearts, setShowHearts] = useState(false);
@@ -21,8 +21,32 @@ const SweetestMessage = () => {
     navigate("/celebration");
   };
 
+  const handlePrevious = () => {
+    navigate("/memories");
+  };
+
   return (
     <div className="min-h-screen relative overflow-hidden bg-gradient-to-b from-indigo-900 via-purple-900 to-pink-900">
+      {/* Navigation Buttons */}
+      <div className="absolute top-4 left-4 right-4 flex justify-between z-50">
+        <Button
+          onClick={handlePrevious}
+          variant="outline"
+          className="bg-white/20 hover:bg-white/30 text-white border-white/30"
+        >
+          <ArrowLeft className="mr-2" size={16} />
+          Previous
+        </Button>
+        <Button
+          onClick={handleCelebration}
+          variant="outline"
+          className="bg-white/20 hover:bg-white/30 text-white border-white/30"
+        >
+          Next
+          <ArrowRight className="ml-2" size={16} />
+        </Button>
+      </div>
+
       {/* Starry Background */}
       <div className="absolute inset-0">
         {[...Array(50)].map((_, i) => (
@@ -39,6 +63,38 @@ const SweetestMessage = () => {
             }}
           />
         ))}
+      </div>
+
+      {/* Road and Couple Walking */}
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-gray-700 to-gray-600 opacity-60"></div>
+      <div className="absolute bottom-8 right-1/3 animate-walk" style={{ animationDirection: 'reverse' }}>
+        <div className="flex space-x-2">
+          <div className="w-3 h-8 bg-gray-800 rounded-full"></div>
+          <div className="w-3 h-8 bg-gray-800 rounded-full"></div>
+        </div>
+      </div>
+
+      {/* Birthday Cakes and Candles */}
+      <div className="absolute top-24 left-20 animate-bounce">
+        <div className="text-4xl">🎂</div>
+        <div className="absolute -top-1 left-1/2 transform -translate-x-1/2">
+          <div className="w-1 h-3 bg-yellow-400 animate-pulse"></div>
+          <div className="w-1 h-1 bg-orange-400 rounded-full animate-pulse"></div>
+        </div>
+      </div>
+
+      <div className="absolute top-48 right-20 animate-bounce" style={{ animationDelay: '2s' }}>
+        <div className="text-3xl">🧁</div>
+        <div className="absolute -top-1 left-1/2 transform -translate-x-1/2">
+          <div className="w-0.5 h-2 bg-yellow-400 animate-pulse"></div>
+        </div>
+      </div>
+
+      <div className="absolute top-36 left-36">
+        <div className="text-2xl animate-pulse">🕯️</div>
+      </div>
+      <div className="absolute top-60 right-36">
+        <div className="text-2xl animate-pulse" style={{ animationDelay: '1s' }}>🕯️</div>
       </div>
 
       {/* Animated Hearts */}

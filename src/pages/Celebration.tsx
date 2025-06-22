@@ -1,12 +1,15 @@
 
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
-import { Heart } from "lucide-react";
+import { Heart, ArrowLeft } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const Celebration = () => {
   const [showCelebration, setShowCelebration] = useState(false);
   const [showConfetti, setShowConfetti] = useState(false);
   const [showMessage, setShowMessage] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     // Sequence of celebrations
@@ -21,8 +24,59 @@ const Celebration = () => {
     };
   }, []);
 
+  const handlePrevious = () => {
+    navigate("/sweetest-message");
+  };
+
   return (
     <div className="min-h-screen relative overflow-hidden bg-gradient-to-b from-indigo-900 via-purple-900 to-pink-900">
+      {/* Navigation Button */}
+      <div className="absolute top-4 left-4 z-50">
+        <Button
+          onClick={handlePrevious}
+          variant="outline"
+          className="bg-white/20 hover:bg-white/30 text-white border-white/30"
+        >
+          <ArrowLeft className="mr-2" size={16} />
+          Previous
+        </Button>
+      </div>
+
+      {/* Road and Couple Walking */}
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-gray-700 to-gray-600 opacity-60"></div>
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-walk">
+        <div className="flex space-x-2">
+          <div className="w-3 h-8 bg-gray-800 rounded-full"></div>
+          <div className="w-3 h-8 bg-gray-800 rounded-full"></div>
+        </div>
+      </div>
+
+      {/* Multiple Birthday Cakes */}
+      <div className="absolute top-16 left-16 animate-bounce">
+        <div className="text-4xl">🎂</div>
+        <div className="absolute -top-1 left-1/2 transform -translate-x-1/2">
+          <div className="w-1 h-3 bg-yellow-400 animate-pulse"></div>
+          <div className="w-1 h-1 bg-orange-400 rounded-full animate-pulse"></div>
+        </div>
+      </div>
+
+      <div className="absolute top-32 right-20 animate-bounce" style={{ animationDelay: '0.5s' }}>
+        <div className="text-3xl">🧁</div>
+        <div className="absolute -top-1 left-1/2 transform -translate-x-1/2">
+          <div className="w-0.5 h-2 bg-yellow-400 animate-pulse"></div>
+        </div>
+      </div>
+
+      <div className="absolute top-20 left-40">
+        <div className="text-2xl animate-pulse">🕯️</div>
+      </div>
+      <div className="absolute top-44 right-40">
+        <div className="text-2xl animate-pulse" style={{ animationDelay: '0.3s' }}>🕯️</div>
+      </div>
+      <div className="absolute top-60 left-20">
+        <div className="text-2xl animate-pulse" style={{ animationDelay: '0.6s' }}>🕯️</div>
+      </div>
+
       {/* Blinking Lights */}
       <div className="absolute inset-0">
         {[...Array(50)].map((_, i) => (
