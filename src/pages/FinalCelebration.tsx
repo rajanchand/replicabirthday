@@ -86,18 +86,16 @@ const FinalCelebration = () => {
         <div className="absolute bottom-16 left-1/2 transform -translate-x-1/2">
           <div className={`flex space-x-4 transition-all duration-1000 ${showDancing ? 'animate-pulse' : 'animate-walk'}`}>
             {/* Male character */}
-            <div className="relative">
-              <div className="w-6 h-12 bg-blue-600 rounded-full"></div>
-              <div className="absolute -top-2 left-1/2 transform -translate-x-1/2 w-4 h-4 bg-yellow-600 rounded-full"></div>
+            <div className="relative text-6xl">
+              🚶‍♂️
               {showDancing && (
                 <div className="absolute -top-8 -left-2 text-red-500 animate-heart-beat">💕</div>
               )}
             </div>
             
             {/* Female character */}
-            <div className="relative">
-              <div className="w-6 h-12 bg-pink-500 rounded-full"></div>
-              <div className="absolute -top-2 left-1/2 transform -translate-x-1/2 w-4 h-4 bg-yellow-600 rounded-full"></div>
+            <div className="relative text-6xl">
+              🚶‍♀️
               {showDancing && (
                 <div className="absolute -top-8 -right-2 text-red-500 animate-heart-beat">💕</div>
               )}
@@ -132,28 +130,35 @@ const FinalCelebration = () => {
         <>
           {/* Left side people */}
           <div className="absolute bottom-20 left-8">
-            <div className="w-4 h-8 bg-green-600 rounded-full animate-bounce"></div>
-            <div className="absolute -top-1 left-1/2 transform -translate-x-1/2 w-3 h-3 bg-yellow-600 rounded-full"></div>
+            <div className="text-5xl animate-bounce">🧑‍🤝‍🧑</div>
             <div className="absolute -top-4 -right-2 text-2xl animate-pulse">🌸</div>
           </div>
 
           <div className="absolute bottom-24 left-20">
-            <div className="w-4 h-8 bg-purple-600 rounded-full animate-bounce" style={{ animationDelay: '0.3s' }}></div>
-            <div className="absolute -top-1 left-1/2 transform -translate-x-1/2 w-3 h-3 bg-yellow-600 rounded-full"></div>
+            <div className="text-4xl animate-bounce" style={{ animationDelay: '0.3s' }}>👥</div>
             <div className="absolute -top-4 -left-2 text-2xl animate-pulse" style={{ animationDelay: '0.5s' }}>🎊</div>
           </div>
 
           {/* Right side people */}
           <div className="absolute bottom-20 right-8">
-            <div className="w-4 h-8 bg-orange-600 rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
-            <div className="absolute -top-1 left-1/2 transform -translate-x-1/2 w-3 h-3 bg-yellow-600 rounded-full"></div>
+            <div className="text-5xl animate-bounce" style={{ animationDelay: '0.2s' }}>👫</div>
             <div className="absolute -top-4 -left-2 text-2xl animate-pulse" style={{ animationDelay: '0.4s' }}>🌹</div>
           </div>
 
           <div className="absolute bottom-24 right-20">
-            <div className="w-4 h-8 bg-red-600 rounded-full animate-bounce" style={{ animationDelay: '0.4s' }}></div>
-            <div className="absolute -top-1 left-1/2 transform -translate-x-1/2 w-3 h-3 bg-yellow-600 rounded-full"></div>
+            <div className="text-4xl animate-bounce" style={{ animationDelay: '0.4s' }}>👬</div>
             <div className="absolute -top-4 -right-2 text-2xl animate-pulse" style={{ animationDelay: '0.6s' }}>✨</div>
+          </div>
+
+          {/* Additional celebrating people */}
+          <div className="absolute bottom-28 left-40">
+            <div className="text-3xl animate-bounce" style={{ animationDelay: '0.6s' }}>🙋‍♀️</div>
+            <div className="absolute -top-2 -right-1 text-xl animate-pulse" style={{ animationDelay: '0.8s' }}>🎉</div>
+          </div>
+
+          <div className="absolute bottom-18 right-40">
+            <div className="text-3xl animate-bounce" style={{ animationDelay: '0.8s' }}>🙋‍♂️</div>
+            <div className="absolute -top-2 -left-1 text-xl animate-pulse" style={{ animationDelay: '1s' }}>🎈</div>
           </div>
         </>
       )}
