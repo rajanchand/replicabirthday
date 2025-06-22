@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
-import { Heart, ArrowLeft } from "lucide-react";
+import { Heart, ArrowLeft, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Celebration = () => {
@@ -28,10 +28,14 @@ const Celebration = () => {
     navigate("/sweetest-message");
   };
 
+  const handleNext = () => {
+    navigate("/final-celebration");
+  };
+
   return (
     <div className="min-h-screen relative overflow-hidden bg-gradient-to-b from-indigo-900 via-purple-900 to-pink-900">
-      {/* Navigation Button */}
-      <div className="absolute top-4 left-4 z-50">
+      {/* Navigation Buttons */}
+      <div className="absolute top-4 left-4 right-4 flex justify-between z-50">
         <Button
           onClick={handlePrevious}
           variant="outline"
@@ -40,6 +44,16 @@ const Celebration = () => {
           <ArrowLeft className="mr-2" size={16} />
           Previous
         </Button>
+        {showMessage && (
+          <Button
+            onClick={handleNext}
+            variant="outline"
+            className="bg-white/20 hover:bg-white/30 text-white border-white/30 animate-pulse"
+          >
+            Final Surprise
+            <ArrowRight className="ml-2" size={16} />
+          </Button>
+        )}
       </div>
 
       {/* Road and Couple Walking */}
@@ -217,6 +231,12 @@ const Celebration = () => {
                 <p className="text-2xl font-bold text-pink-600 animate-pulse">
                   I LOVE YOU MORE THAN WORDS CAN SAY! 💝
                 </p>
+                <Button
+                  onClick={handleNext}
+                  className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105 animate-pulse"
+                >
+                  One Final Surprise ✨
+                </Button>
               </div>
             </CardContent>
           </Card>

@@ -10,6 +10,7 @@ import RomanticMessage from "./pages/RomanticMessage";
 import MemoriesSlideshow from "./pages/MemoriesSlideshow";
 import SweetestMessage from "./pages/SweetestMessage";
 import Celebration from "./pages/Celebration";
+import FinalCelebration from "./pages/FinalCelebration";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -27,6 +28,7 @@ const App = () => (
           <Route path="/memories" element={<MemoriesSlideshow />} />
           <Route path="/sweetest-message" element={<SweetestMessage />} />
           <Route path="/celebration" element={<Celebration />} />
+          <Route path="/final-celebration" element={<FinalCelebration />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
