@@ -22,8 +22,8 @@ const Index = () => {
     
     if (username.toLowerCase().trim() === correctUsername && birthday === correctBirthday) {
       toast({
-        title: "Welcome my darling! 💖",
-        description: "Get ready for your special surprise my babe...",
+        title: "Welcome your Birthday wish portal! 💖",
+        description: "Get ready for your special surprise my chasmiss...",
       });
       
       setTimeout(() => {
@@ -87,7 +87,7 @@ const Index = () => {
               Today is your birthday 💖
             </CardTitle>
             <p className="text-gray-600 text-sm leading-relaxed">
-              If you want to see your surprise, please fulfill the details below given by your Boyfriend 💌
+              If you want to see your surprise, please fulfill the details below given by your Dai 💌
             </p>
           </CardHeader>
           
@@ -103,7 +103,7 @@ const Index = () => {
                   value={username}
                   onChange={(e) => setUsername(e.target.value)}
                   className="border-pink-200 focus:border-pink-400 focus:ring-pink-200"
-                  placeholder="my love"
+                  placeholder="replica rasaili "
                   required
                 />
               </div>
@@ -118,7 +118,7 @@ const Index = () => {
                   value={birthday}
                   onChange={(e) => setBirthday(e.target.value)}
                   className="border-pink-200 focus:border-pink-400 focus:ring-pink-200"
-                  placeholder="15/08/1995"
+                  placeholder="02/07/1999"
                   pattern="\d{2}/\d{2}/\d{4}"
                   required
                 />
