@@ -10,7 +10,12 @@ const RomanticMessage = () => {
   const [showButton, setShowButton] = useState(false);
   const navigate = useNavigate();
 
-  const fullMessage = "To the love of my life, on this beautiful day you came into the world and later into my heart. Every sunrise is brighter, every moment is magical, and every breath is sweeter because you exist. You are my everything, my forever, my dream come true. Happy Birthday, my everything 💖";
+  const fullMessage = "तिमीले मनले चहाएका सबै इच्छा पुरा होउन्,
+सपनाहरू सार्थक बनून्,
+र लक्ष्यहरूमा सधैं सफलता मिलोस्।
+तिमी सधैं मुस्कुराइरहो,
+जीवनमा माया, शान्ति र उज्यालो भरियोस्।
+Happy Birthday! 💫💖";
 
   useEffect(() => {
     let index = 0;
