@@ -128,7 +128,7 @@ const Index = () => {
                 type="submit"
                 className="w-full bg-gradient-to-r from-pink-400 to-purple-500 hover:from-pink-500 hover:to-purple-600 text-white font-medium py-3 rounded-lg transition-all duration-300 transform hover:scale-105"
               >
-                Open My Surprise 💝
+                Open My Surprise 💝 your Dai
               </Button>
             </form>
           </CardContent>
