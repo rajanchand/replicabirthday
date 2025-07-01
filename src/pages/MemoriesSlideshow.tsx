@@ -11,7 +11,7 @@ const MemoriesSlideshow = () => {
 
   // Memory data - replace with actual images and captions
   const memories = [
-    { image: "/placeholder.svg", caption: "Our First Meeting 💕", description: "The day my world changed forever" },
+    { image: "/1.jpg", caption: "Our First Meeting 💕", description: "सुन्दरता अल्प हुन्छ तर मुस्कान सधैं रहन्छ, तिम्रो मुस्कानले नै संसार बदल्छ" },
     { image: "/placeholder.svg", caption: "Your Beautiful Smile 😊", description: "That lights up my entire universe" },
     { image: "/placeholder.svg", caption: "Our First Date 🌹", description: "When I knew you were the one" },
     { image: "/placeholder.svg", caption: "Dancing Together 💃", description: "Lost in each other's eyes" },
