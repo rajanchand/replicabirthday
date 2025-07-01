@@ -191,7 +191,7 @@ const Celebration = () => {
             <CardContent className="p-12 text-center space-y-8">
               <div className="space-y-6">
                 <h1 className="text-5xl font-bold bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent animate-pulse">
-                  Happy Birthday My Love! 💞
+                  Happy Birthday Birthday Girl Replica 💞
                 </h1>
                 
                 <div className="flex justify-center space-x-3">
@@ -206,7 +206,7 @@ const Celebration = () => {
                 </div>
                 
                 <h2 className="text-3xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-                  Let's Celebrate Forever! 🎉✨
+                  Let's Celebrate your birthday Forever! 🎉✨
                 </h2>
               </div>
               
@@ -220,8 +220,7 @@ const Celebration = () => {
                 
                 <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-2xl p-8 border-4 border-purple-200">
                   <p className="text-gray-800 text-xl leading-relaxed font-medium">
-                    Today we celebrate not just your birthday, but the beautiful soul you are and the incredible love we share. 
-                    Here's to many more years of adventures, laughter, and growing old together! 💕✨
+                  तिमी हाँस्दा समय रोकिएजस्तो लाग्छ, अनि तिमी जन्मिएको दिन, संसारमा मिठास थपिएको दिन जस्तो लाग्छ। 💕✨
                   </p>
                 </div>
               </div>
@@ -229,7 +228,7 @@ const Celebration = () => {
               <div className="space-y-4">
                 <div className="text-4xl animate-bounce">🎁🎊🎈💖🌟</div>
                 <p className="text-2xl font-bold text-pink-600 animate-pulse">
-                  I LOVE YOU MORE THAN WORDS CAN SAY! 💝
+                  Hey Happy birthday Replica.. 💝
                 </p>
                 <Button
                   onClick={handleNext}
