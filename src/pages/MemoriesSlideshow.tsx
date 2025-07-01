@@ -12,15 +12,15 @@ const MemoriesSlideshow = () => {
   // Memory data - replace with actual images and captions
   const memories = [
     { image: "/1.jpg", caption: "Our First Meeting 💕", description: "सुन्दरता अल्प हुन्छ तर मुस्कान सधैं रहन्छ, तिम्रो मुस्कानले नै संसार बदल्छ" },
-    { image: "/placeholder.svg", caption: "Your Beautiful Smile 😊", description: "That lights up my entire universe" },
-    { image: "/placeholder.svg", caption: "Our First Date 🌹", description: "When I knew you were the one" },
-    { image: "/placeholder.svg", caption: "Dancing Together 💃", description: "Lost in each other's eyes" },
-    { image: "/placeholder.svg", caption: "Sunset Walks 🌅", description: "Hand in hand, heart to heart" },
-    { image: "/placeholder.svg", caption: "Lazy Mornings ☀️", description: "Waking up to your love" },
-    { image: "/placeholder.svg", caption: "Adventure Time 🎢", description: "Creating memories together" },
-    { image: "/placeholder.svg", caption: "Quiet Moments 📚", description: "Finding peace in your presence" },
-    { image: "/placeholder.svg", caption: "Celebration Days 🎉", description: "Every day with you is special" },
-    { image: "/placeholder.svg", caption: "Forever Moments 💍", description: "Building our future together" }
+    { image: "/2.jpg", caption: "Your Beautiful Smile 😊", description: "कुनोबाट हेर्दा पनि मुस्कानले दिल जितिन्छ, सुन्दरताको परिभाषा यही हो।" },
+    { image: "/3.jpg", caption: "Our First Date 🌹", description: "चिसो मौसम, कफीको कप र मुस्कानको ताप – यो भन्दा मिठो अरू के हुन सक्छ?" },
+    { image: "/4.jpg", caption: "Dancing Together 💃", description: "उनको मुस्कानले अनुहार मात्र होइन, वातावरण नै उज्यालो बनाउँछ।" },
+    { image: "/basantapur.jpg", caption: "Sunset Walks 🌅", description: "साँझको सूर्य अस्ताइरहे पनि, तिमीको मुस्कानले उज्यालो अझै रोकिएको थियो।" },
+    { image: "/java.jpg", caption: "Lazy Mornings ☀️", description: "कफी मिसाइरहँदा तिमी, लाग्थ्यो मनका कुरा पनि मिसिँदै छन् सायद।" },
+    { image: "/java1.jpg", caption: "Adventure Time 🎢", description: "उहाँको साथ छ भने बाकीसबै कुरा फिका लाग्छन्, कफी मात्र होइन, जिन्दगी पनि मीठो बन्छ।" },
+    { image: "/panthuse1.jpg", caption: "Quiet Moments 📚", description: "तिमीलाई हेरेर म सोच्न थालेको छु — साँच्चै, कुनै-कसैका लागि सिर्जना गरिन्छ। र तिमी मेरो सिर्जना हौ।" },
+    { image: "/panthouse.jpg", caption: "Celebration Days 🎉", description: "तिमीलाई देख्दा लाग्छ, कोही-कोही साँच्चिकै मनबाट झुल्किन्छन् — बत्ती होइन, भावना बनेर।" },
+    { image: "/red with class.jpg", caption: "Forever Moments 💍", description: "कानमा फूल, ओठमा मुस्कान, अनि नजरमा नयापन — तिमी कुनै चित्र होइनौ, तिमी त्यो भाव हौ जुन क्यानभासले पनि पक्रन सक्दैन।" }
   ];
 
   useEffect(() => {
