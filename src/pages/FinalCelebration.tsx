@@ -230,17 +230,17 @@ const FinalCelebration = () => {
               <div className="bg-gradient-to-r from-pink-50 to-purple-50 rounded-2xl p-8 border-4 border-pink-200 relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-r from-pink-200/20 to-purple-200/20 animate-pulse"></div>
                 <p className="text-gray-800 text-3xl leading-relaxed font-bold relative z-10">
-                  🎂 The End of a Perfect Birthday Story 🎂
+                  🎂 The another day for a Perfect Birthday Story 🎂
                 </p>
                 <p className="text-gray-700 text-xl mt-4 relative z-10">
-                  Our love story continues forever... ✨💕✨
+                  I want to celebrate your birthday forever... ✨💕✨
                 </p>
               </div>
               
               <div className="space-y-4">
                 <div className="text-5xl animate-bounce">👑💖👑</div>
                 <p className="text-3xl font-bold text-pink-600 animate-pulse">
-                  Happy Birthday My Queen! 👸💝
+                  Happy Birthday Miss Replica Chasmiss 👸💝
                 </p>
               </div>
             </CardContent>
